@@ -1,4 +1,4 @@
-# Power-BI_Apocolypse
+# Best store to purchase products
 
 ## 🧾 Overview
 This visualization is to analyze the best store to purchase the products.
@@ -7,12 +7,12 @@ This visualization is to analyze the best store to purchase the products.
   - Power BI Desktop
 
 ## 📂 Dataset
-  - Source - Apocolypse Food Prep
+  - Source - Best Price for Products
   - Format - Excel
   - Includes - Store , Product , Price , Date
 
 ## 🚀 How to Use
-1. Download the 'Apocolypse Food Prep.xlsx' file.
+1. Download the 'Best Price for Products.xlsx' file.
 2. Open it in Power BI Desktop.
 3. In Excel Workbook option select the excel file.
 4. Select Sheet1.
