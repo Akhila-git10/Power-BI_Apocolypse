@@ -18,6 +18,12 @@
 4. We can use to create measures and calculated columns.
 5. In 'DAX in Power BI.xlsx' file we have two tables 'Apocalypse Store' and Apocalypse Sales'.
 6. If we view the relationship of the tables in Power BI Desktop in the Model view we can observe that they are linked with the 'Product_Id' column.
-7. 
+7. If we look into the table data we can understand that 'Apocalypse Sales' is having the data like what a customer purchased , the product_id , order_id , the date he purchased , and the no. of units sold.
+8. And in 'Apocalypse Store' table we are having the product details like the product_id , product_name , how much is the production_cost and at what price it is listed.
+9. Now to calculate how many orders they sold we can count by a DAX function.
+10. Click right click on Apocalypse Sales from right side Data pane and select 'New Measure'.
+11. We can name it as 'Count of Sales = COUNT('Apocalypse_Sales'[ Order Id])'.
+12. To visualize we can select Table from Visualizations.
+13. The no of orders they sold are '74'.
 
 ## 📷 Dashboard Preview
