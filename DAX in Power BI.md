@@ -25,5 +25,27 @@
 11. We can name it as 'Count of Sales = COUNT('Apocalypse_Sales'[ Order Id])'.
 12. To visualize we can select Table from Visualizations.
 13. The no of orders they sold are '74'.
+14. To have the no. of order per customer need to visualize with columns in Visualizations in the right hand side pane.
+15. To calcuate and count how many units sold per order.
+16. Select Product Name from 'Apocalypse Store' table.
+17. To Sum the no.of units sold.
+18. Select New measure in Apocalypse Sales table.
+19. Sum of Products = SUM('Apocalypse Sales'[Units Sold]).
+20. Now a new chart is created with the product name and the no.of units sold per product.
+21. And the Total would be 3001.
+22. To calculate Profit.
+23. Select New Measure in Apocalypse Store.
+24. Profit = (SUM('Apocalypse Store'[Price]) - SUM('Apocalypse Store'[Production Cost])) * SUM('Apocalypse Sales'[Units Sold]).
+25. Select Table from Visualizations.
+26. Now to see the SUM and SUMX difference select Table view.
+27. Go to 'Home'.
+28. Select 'New Column'.
+29. Name it as Profit_column and paste the same formula.
+30. We can see that the new Profit_Column is having the same value in all rows.
+31. To calculate profit of each customer we need individual iteration so we need to use SUMX.
+32. Select New Column from Home.
+33. Profit_Column_SUMx = SUMx('Apocalypse Sales' , ('Apocalypse Store'[Price] - 'Apocalypse Store'[Production Cost]) * 'Apocalypse Sales'[Units Sold]).
+34. Now we can view Profit gained respectively per Customer.
+35. 
 
 ## 📷 Dashboard Preview
