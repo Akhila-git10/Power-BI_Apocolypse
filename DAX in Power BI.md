@@ -1,7 +1,7 @@
 # DAX in Power BI
 
 ## 🧾 Overview
-
+To create measures and Calculated columns. Use COUNT , SUM , SUMX , WEEKDAY and IF DAX functions.
 
 ## 🛠️ Tools & Technologies
   - Power BI Desktop
@@ -46,6 +46,20 @@
 32. Select New Column from Home.
 33. Profit_Column_SUMx = SUMx('Apocalypse Sales' , ('Apocalypse Store'[Price] - 'Apocalypse Store'[Production Cost]) * 'Apocalypse Sales'[Units Sold]).
 34. Now we can view Profit gained respectively per Customer.
-35. 
+35. In 'Apocalypse Sales' table we have a 'Date_Purchased' column , to view the data of the column along with the weekday need to change format of the column in column tools section.
+36. To view in which number the day of the week is, ex: Sunday is 1 and Saturday is 7.
+37. Select Create New Column , name it Day of Week = Weekday('Apocalypse Sales'[Date_Purchased'],2).
+38. To view the difference between 'Date_Purchased' and 'Day of Week'.
+39. Go to Report view.
+40. Select 'Date Purchased' and 'Units sold' select column chart, and we can view that it is not generated properly to calculate.
+41. Select 'Day of Week' and 'Units sold' select column chart , 'Day of Week' as X-axis.
+42. Enable Data lables in Visualizations section.
+43. Now we can properly view in which day of the week we sold the highest and the lowest.
+44. Now to check as per the 'Units Sold' whether it is a big order or small order use 'IF' function.
+45. Select 'Create New Column' , name it 'Order Size'.
+46. Order Size = IF('Apocalypse Sales'[Units Sold]>25 , "Big Order" , "Small Order").
 
 ## 📷 Dashboard Preview
+
+<img width="1920" height="1013" alt="Screenshot (50)" src="https://github.com/user-attachments/assets/2657999d-ee13-4ed7-85d7-935e484ea799" />
+
